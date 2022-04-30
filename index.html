@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="page" class="container">
+      <form class="upper d-flex">
+        <input spellcheck="true" v-model="msg" type="text" />
+        <button
+          :disabled=" msg ? false : true "
+          class="btn btn-primary add-item"
+          @click.prevent="addItem"
+        >
+          add item
+        </button>
+        <button
+          :disabled=" items.length >= 2 ? false : true "
+          class="btn btn-danger clear-all"
+          @click.prevent="deleteAll"
+        >
+          delete all
+        </button>
+      </form>
+      <div class="middle">
+        <div
+          class="item text-truncate d-flex align-items-center"
+          @click="completeItem(index)"
+          v-for="(item, index) in items"
+        >
+          <div class="text" :data-id="{index}" @click="completeItem(index)">{{ item }}</div>
+          <button class="btn btn-danger delete" @click="deleteItem(index)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
