@@ -34,7 +34,7 @@
           @click="completeItem(index)"
           v-for="(item, index) in items"
         >
-          <div :class="{text-decoration-line-through : selected}" id="text" @click="selected = !selected">{{ item }}</div>
+          <div :class="{ text-decoration-line-through: selected }" id="text" @click="selected = !selected">{{ item }}</div>
           <button class="btn btn-danger delete" @click="deleteItem(index)">
             <i class="fa-solid fa-xmark"></i>
           </button>
