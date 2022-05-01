@@ -12,6 +12,9 @@ body {
   width: 50% !important;
   margin-top: 20px;
 }
+form {
+  gap: 15px;
+}
 input {
   padding-left: 20px;
 }
