@@ -6,7 +6,7 @@ var vm = new Vue({
   },
   methods: {
     addItem: function () {
-      this.items.contains(this.msg.trim()) ? '' :this.items.push(this.msg.trim());
+      this.items.push(this.msg);
       this.msg = "";
     },
     deleteItem: function (index) {
