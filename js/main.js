@@ -3,7 +3,7 @@ var vm = new Vue({
   data: {
     msg: "",
     items: [],
-    selected = false;
+    selected = false,
   },
   methods: {
     addItem: function () {
