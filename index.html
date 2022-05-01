@@ -35,7 +35,7 @@
           @click="completeItem(index)"
           v-for="(item, index) in items"
         >
-          <div class="text" :data-id="{index}" @click="completeItem(index)">{{ item }}</div>
+          <div class="text" @click="task.done = !task.done" :style="{ 'text-decoration': task.done ? 'line-through' : '' }">{{ item }}</div>
           <button class="btn btn-danger delete" @click="deleteItem(index)">
             <i class="fa-solid fa-xmark"></i>
           </button>
