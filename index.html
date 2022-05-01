@@ -31,7 +31,6 @@
       </form>
         <div
           class="item text-truncate d-flex align-items-center"
-          @click="completeItem(index)"
           v-for="(item, index) in items"
         >
           <div :class="{ text-decoration-line-through: selected }" id="text" @click="selected = !selected">{{ item }}</div>
