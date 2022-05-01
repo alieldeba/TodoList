@@ -19,7 +19,7 @@ button {
   border-radius: 0 !important;
   text-transform: uppercase !important;
   width: 30%;
-  margin-left: 15px;
+  margin-left: 15px !important;
 }
 .item {
   background-color: white;
