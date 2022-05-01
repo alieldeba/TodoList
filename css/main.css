@@ -12,9 +12,6 @@ body {
   width: 50% !important;
   margin-top: 20px;
 }
-form button {
-  margin-left: 15px;
-}
 input {
   padding-left: 20px;
 }
@@ -22,6 +19,7 @@ button {
   border-radius: 0 !important;
   text-transform: uppercase !important;
   width: 30%;
+  margin-left: 15px;
 }
 .item {
   background-color: white;
