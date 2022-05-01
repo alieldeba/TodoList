@@ -34,13 +34,13 @@
           @click="completeItem(index)"
           v-for="(item, index) in items"
         >
-          <div :class="{text-decoration-line-through : selected}" id="text" @click="toggle">{{ item }}</div>
+          <div :class="{text-decoration-line-through : selected}" id="text" @click="selected = !selected">{{ item }}</div>
           <button class="btn btn-danger delete" @click="deleteItem(index)">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
     </div>
-    <script src="js/vue.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
