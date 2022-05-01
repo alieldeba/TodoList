@@ -9,9 +9,6 @@ var vm = new Vue({
       this.items.push(this.msg);
       this.msg = "";
     },
-    completeItem: function (index) {
-      document.querySelector(".text").style.cssText = 'text-decoration: line-through;';
-    },
     deleteItem: function (index) {
       this.items.splice(index, 1);
     },
