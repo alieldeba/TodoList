@@ -3,6 +3,7 @@ var vm = new Vue({
   data: {
     msg: "",
     items: [],
+    selected = false;
   },
   methods: {
     addItem: function () {
@@ -15,6 +16,9 @@ var vm = new Vue({
     deleteAll: function () {
       this.items = [];
     },
+    toggle: function () {
+      this.selected = !this.selected;
+    }
   },
 });
 
