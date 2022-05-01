@@ -33,7 +33,7 @@
           class="item text-truncate d-flex align-items-center"
           v-for="(item, index) in items"
         >
-          <div :class="{ text-decoration-line-through: selected }" @click="selected = !selected" id="text">{{ item }}</div>
+          <div id="text">{{ item }}</div>
           <button class="btn btn-danger delete" @click="deleteItem(index)">
             <i class="fa-solid fa-xmark"></i>
           </button>
