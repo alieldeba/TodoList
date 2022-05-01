@@ -16,9 +16,6 @@ var vm = new Vue({
     deleteAll: function () {
       this.items = [];
     },
-    toggle: function () {
-      this.selected = !this.selected;
-    }
   },
 });
 
