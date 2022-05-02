@@ -17,14 +17,14 @@
         <input spellcheck="true" v-model="msg" type="text" maxlength="25" />
         <button
           :disabled=" msg.trim().length && !items.includes(msg.trim()) ? false : true "
-          class="btn btn-primary add-item"
+          class="btn btn-primary text-nowrap add-item"
           @click.prevent="addItem"
         >
           add item
         </button>
         <button
           :disabled=" items.length >= 2 ? false : true "
-          class="btn btn-danger clear-all"
+          class="btn btn-danger text-nowrap clear-all"
           @click.prevent="deleteAll"
         >
           delete all
