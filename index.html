@@ -13,7 +13,7 @@
   <body>
     <h1 class="text-center my-5">Todo List</h1>
     <div id="page" class="container d-flex align-items-center flex-column">
-      <form class="d-flex justify-content-center">
+      <form class="d-flex justify-content-center w-100">
         <input spellcheck="true" v-model="msg" type="text" maxlength="25" />
         <button
           :disabled=" msg.trim().length && !items.includes(msg.trim()) ? false : true "
@@ -31,7 +31,7 @@
         </button>
       </form>
         <div
-          class="item text-truncate d-flex align-items-center justify-content-between"
+          class="item w-100 text-truncate d-flex align-items-center justify-content-between"
           v-for="(item, index) in items"
         >
           <div id="text">{{ item }}</div>
