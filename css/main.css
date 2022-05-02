@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
 }
 body {
   background-color: #eee !important;
@@ -13,6 +12,7 @@ body {
 }
 input {
   padding-left: 20px;
+  min-width: 400px;
 }
 button {
   border-radius: 0 !important;
@@ -25,6 +25,7 @@ button {
   margin-top: 20px;
   padding: 10px 20px;
   cursor: pointer;
+  min-width: 400px;
 }
 #text::first-letter {
   text-transform: capitalize;
