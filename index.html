@@ -13,7 +13,7 @@
   <body>
     <h1 class="text-center my-5">Todo List</h1>
     <div id="page" class="container d-flex align-items-center flex-column">
-      <form class="d-flex">
+      <form class="d-flex justify-content-center">
         <input spellcheck="true" v-model="msg" type="text" maxlength="50" />
         <button
           :disabled=" msg.trim().length && !items.includes(msg.trim()) ? false : true "
