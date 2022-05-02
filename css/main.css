@@ -12,8 +12,6 @@ body {
 }
 input {
   padding-left: 20px;
-  min-width: 200px;
-  max-height: 50px;
 }
 button {
   border-radius: 0 !important;
@@ -21,16 +19,11 @@ button {
   width: 250px !important;
   margin-left: 5px !important;
 }
-.clear-all {
-  width: 100px !important;
-  height: 100px !important;
-}
 .item {
   background-color: white;
   margin-top: 20px;
   padding: 10px 20px;
   cursor: pointer;
-  min-width: 400px;
 }
 #text::first-letter {
   text-transform: capitalize;
