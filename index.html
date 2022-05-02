@@ -14,7 +14,7 @@
     <h1 class="text-center my-5">Todo List</h1>
     <div id="page" class="container d-flex align-items-center flex-column">
       <form class="d-flex justify-content-center">
-        <input spellcheck="true" v-model="msg" type="text" maxlength="50" />
+        <input spellcheck="true" v-model="msg" type="text" maxlength="25" />
         <button
           :disabled=" msg.trim().length && !items.includes(msg.trim()) ? false : true "
           class="btn btn-primary add-item"
@@ -31,7 +31,7 @@
         </button>
       </form>
         <div
-          class="item text-truncate d-flex align-items-center"
+          class="item text-truncate d-flex align-items-center justify-content-between"
           v-for="(item, index) in items"
         >
           <div id="text">{{ item }}</div>
