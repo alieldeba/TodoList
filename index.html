@@ -16,7 +16,7 @@
       <form class="upper d-flex">
         <input spellcheck="true" v-model="msg" type="text" maxlength="50" />
         <button
-          :disabled=" msg ? false : true "
+          :disabled=" msg.trim().length ? false : true "
           class="btn btn-primary add-item"
           @click.prevent="addItem"
         >
