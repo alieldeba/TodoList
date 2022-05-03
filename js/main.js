@@ -7,7 +7,7 @@ var vm = new Vue({
   methods: {
     addItem: function () {
       // Returng msg by Capitalize
-      this.items.push(this.msg.trim().charAt(0).toUpperCase() + this.msg.trim().slice(1));
+      this.items.push(this.msg.trim().charAt(0).toUpperCase() + this.msg.trim().slice(1).replace('/\s+/g', ' '));
       this.msg = "";
     },
     deleteItem: function (index) {
