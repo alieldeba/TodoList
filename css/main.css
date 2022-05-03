@@ -24,6 +24,7 @@ button {
   margin-top: 20px;
   padding: 10px 20px;
   cursor: pointer;
+  width: 300px;
 }
 #text::first-letter {
   text-transform: capitalize;
