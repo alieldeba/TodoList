@@ -21,7 +21,7 @@ button {
 }
 .item {
   background-color: white;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 10px 10px 20px;
   cursor: pointer;
   min-width: 540px;
