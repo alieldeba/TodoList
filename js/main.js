@@ -6,7 +6,7 @@ var vm = new Vue({
   },
   methods: {
     addItem: function () {
-      this.items.push(this.msg.trim().toLowerCase());
+      this.items.push(this.msg.charAt(0).toUpperCase() + this.msg.slice(1));
       this.msg = "";
     },
     deleteItem: function (index) {
