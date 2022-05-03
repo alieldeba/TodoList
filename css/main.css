@@ -26,9 +26,11 @@ button {
   cursor: pointer;
   min-width: 500px;
 }
+/*
 #text::first-letter {
   text-transform: capitalize;
 }
+*/
 i {
   color: white;
 }
