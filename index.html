@@ -16,7 +16,7 @@
       <form class="d-flex justify-content-center w-100">
         <input spellcheck="true" v-model="msg" type="text" maxlength="25" />
         <button
-          :disabled=" msg.trim().length && !items.includes(msg.trim()) ? false : true "
+          :disabled=" msg.trim().length && !items.includes(msg.trim().toLowerCase) ? false : true "
           class="btn btn-primary text-nowrap add-item"
           @click.prevent="addItem"
         >
@@ -31,7 +31,7 @@
         </button>
       </form>
         <div
-          class="item w-50 text-truncate d-flex align-items-center justify-content-between"
+          class="item text-truncate d-flex align-items-center justify-content-between"
           v-for="(item, index) in items"
         >
           <div id="text">{{ item }}</div>
