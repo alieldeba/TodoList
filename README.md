@@ -2,8 +2,12 @@
 
 ### Futures
 
-- [X] Adding Loading Screen
+- [x] Adding Loading Screen
 
-- [X] Adding Starting Screen
+- [x] Adding Starting Screen
+
+- [x] Adding Todo Page
+
+- [ ] Adding, Deleting, Editing Todo
 
 - [ ] Converting App To Desketop
