@@ -8,7 +8,7 @@ const HomePage = () => {
     e.preventDefault();
     // Checking that todo not empty and unique
     if (!todos.includes(newTodo) && !newTodo.replaceAll(" ", "") == "") {
-      setTodos([...todos, newTodo.trim().replaceAll(/s+/g, " ")]);
+      setTodos([...todos, newTodo.trim().replaceAll(/\s+/g, " ")]);
       setNewTodo("");
     }
   };
