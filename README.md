@@ -4,6 +4,6 @@
 
 - [X] Adding Loading Screen
 
-- [ ] Adding Starting Screen
+- [X] Adding Starting Screen
 
 - [ ] Converting App To Desketop
